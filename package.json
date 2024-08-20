@@ -6,16 +6,15 @@
     "@koa/router": "^10.0.0",
     "@lit-labs/ssr": "^3.1.2",
     "@lit-labs/ssr-client": "^1.1.1",
-    "@playwright/test": "^1.46.1",
     "@webcomponents/template-shadowroot": "^0.1.0",
     "koa": "^2.13.1",
     "koa-node-resolve": "*",
     "koa-static": "^5.0.0",
-    "lit": "^3.2.0",
-    "playwright": "^1.46.1"
+    "lit": "^3.2.0"
   },
   "scripts": {
     "start": "node src/server.js",
+    "setup": "npm install && playwright install --with-deps",
     "test": "web-test-runner"
   },
   "type": "module",

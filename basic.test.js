@@ -25,9 +25,9 @@ test('Should work with arrays', async () => {
 
   // Fails
   var icons = await ssrFixture(html`<div>${generateIcons(30)}</div>`, opts);
+  assert.exists(icons);
 
   // Also fails
   var icons = await ssrFixture(generateIcons(30), opts);
-
   assert.exists(icons);
 });
